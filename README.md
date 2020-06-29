@@ -2,7 +2,7 @@
 
 ## Overview
 
-The tls-covid19 dataset, for multi-document timeline summarization, consists of news stories regarding specific queries from portuguese and english news outlets. The news sources include Jornal Público, Jornal Observador, CNN and BBC.
+The tls-covid19 dataset, for multi-document timeline summarization, consists of news stories regarding specific queries from portuguese and english news outlets. The news sources include Jornal Público, Jornal Observador, CNN and The Guardian.
 
 Each query dataset is composed of:
 
