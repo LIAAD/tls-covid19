@@ -2,12 +2,12 @@
 
 ## What
 
-The *tls-covid19* is a dataset for multi-document timeline summarization. It consists of news stories regarding specific topics from portuguese and english news outlets. The news sources include [Jornal Público](https://www.publico.pt/), [Jornal Observador](https://observador.pt/), [CNN](https://edition.cnn.com/) and [The Guardian](https://www.theguardian.com/international).
+The *tls-covid19* is a dataset for multi-document timeline summarization. It consists of news stories regarding specific topics from portuguese and english news outlets. The news sources include [Jornal Público](https://www.publico.pt/) (PT) and [CNN](https://edition.cnn.com/) (EN).
 For each news source and topic there is a ground truth timeline and a set of news articles. The goal is to predict the timeline from the set of news articles.
 
 The following image shows the summarization task and an example of the general structure of the dataset for one topic.
 
-![Dataset structure](tls-covid19-struct.png?raw=true "Task and dataset structure")
+![Dataset structure](img/tls-covid19-struct.png?raw=true "Task and dataset structure")
 
 ## Why
 
@@ -29,12 +29,75 @@ The source code to reproduce the dataset is available in a Google Colab notebook
 
 ## Statistics
 
-As of **30/06/2020**
+As of **12/10/2020**
 
-Number of topics:
-   - PT: 50
-   - EN: 12
+<table>
+<thead>
+  <tr>
+    <th colspan="3"></th>
+    <th colspan="4">Input Docs</th>
+    <th colspan="3">Ground-Truth</th>
+    <th colspan="2">Compression</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Lang</td>
+    <td>Source</td>
+    <td>#Topics</td>
+    <td>#Docs</td>
+    <td>Avg #sents</td>
+    <td>Avg #dates</td>
+    <td>Avg sents/dates</td>
+    <td>Avg #sents</td>
+    <td>Avg #dates</td>
+    <td>Avg sents/dates</td>
+    <td>Sents</td>
+    <td>Dates</td>
+  </tr>
+  <tr>
+    <td>PT</td>
+    <td>Público</td>
+    <td>368</td>
+    <td>34,745</td>
+    <td>801.20</td>
+    <td>49.62</td>
+    <td>16.15</td>
+    <td>33.02</td>
+    <td>20.05</td>
+    <td>1.65</td>
+    <td>4.12</td>
+    <td>40.41</td>
+  </tr>
+  <tr>
+    <td>EN</td>
+    <td>CNN</td>
+    <td>35</td>
+    <td>16,332</td>
+    <td>4690.17</td>
+    <td>123.14</td>
+    <td>38.09</td>
+    <td>27.11</td>
+    <td>18.17</td>
+    <td>1.49</td>
+    <td>0.58</td>
+    <td>14.76</td>
+  </tr>
+</tbody>
+</table>
 
-Number of documents:
-   - PT: 18674
-   - EN: 11354
+
+Distribution of topics type:
+
+| Type  |   PT   |   EN   |
+| :---: | :----: | :----: |
+|  PER  |   52   |    3   |
+|  ORG  |   25   |    4   |
+|  LOC  |   198  |    19  |
+|  MISC |   9    |    5   |
+|  KW   |   84   |    4   |
+
+
+WordClouds EN/PT:
+
+![Word Clouds](img/wc_en-pt_merged.png?raw=true "English and portuguese word clouds")
