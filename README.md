@@ -4,7 +4,7 @@
 
 The *tls-covid19* is a multi-lingual and multi-document Timeline Summarization (TLS) annotated dataset built to foster the emergence and evaluation of new algorithms, and, at the same time, enable the study of news coverage about the COVID-19 pandemic. It consists of a number of curated topics related to the Covid-19 outbreak, with associated news articles from portuguese and english news outlets and their respective reference timelines as gold-standard. The news sources include [Jornal Público](https://www.publico.pt/) (PT) and the[CNN](https://edition.cnn.com/) (EN). The following figure shows the format and the structure  of the dataset.
 
-![Dataset structure](img/tls-covid19-struct.jpg?raw=true "Dataset structure")
+![Dataset structure](img/tls-covid19-structure.jpg?raw=true "Dataset structure")
 
 ## Why
 
