@@ -2,30 +2,23 @@
 
 ## What
 
-The *tls-covid19* is a dataset for multi-document timeline summarization. It consists of news stories regarding specific topics from portuguese and english news outlets. The news sources include [Jornal Público](https://www.publico.pt/) (PT) and [CNN](https://edition.cnn.com/) (EN).
-For each news source and topic there is a ground truth timeline and a set of news articles. The goal is to predict the timeline from the set of news articles.
+The *tls-covid19* is a multi-lingual and multi-document Timeline Summarization (TLS) annotated dataset built to foster the emergence and evaluation of new algorithms, and, at the same time, enable the study of news coverage about the COVID-19 pandemic. It consists of a number of curated topics related to the Covid-19 outbreak, with associated news articles from portuguese and english news outlets and their respective reference timelines as gold-standard. The news sources include [Jornal Público](https://www.publico.pt/) (PT) and the[CNN](https://edition.cnn.com/) (EN). The following figure shows the format and the structure  of the dataset.
 
-The following image shows the summarization task and an example of the general structure of the dataset for one topic.
-
-![Dataset structure](img/tls-covid19-struct.png?raw=true "Task and dataset structure")
+![Dataset structure](img/tls-covid19-struct.jpg?raw=true "Dataset structure")
 
 ## Why
 
-Multi-document timeline summarization is a challenging task with a lack of datasets. This deficit is even more noticeable for low resource languages.
+The rise of social media and the explosion of digital news in the web sphere have created new challenges to extract knowledge and make sense of published information. Automated timeline generation appears in this context as a promising answer to help users dealing with this information overload problem. Formally, Timeline Summarization (TLS) can be defined as a subtask of Multi-Document Summarization (MDS) conceived to highlight the most important information during the development of a story over time by summarizing long-lasting events in a timely ordered fashion. As opposed to traditional MDS, however, TLS has a limited number of publicly available datasets. This lack of datasets is even more noticeable for low resource languages, including Portuguese, which despite being the sixth most spoken language in the world [Ethnologue (2019, 22nd edition)] lacks a specific TLS dataset.
 
-Portuguese is a low resource language, despite being the sixth most spoken language in the world [Ethnologue (2019, 22nd edition)]. In fact, we do not know any document summarization corpus for the portuguese language.
-
-The worldwide coverage of the coronavirus pandemic presents a good opportunity to create a large multilingual dataset for timeline summarization.
+Following the worldwide coverage of the coronavirus pandemic, we propose the TLS-Covid19 dataset, a novel corpus for the Portuguese and English languages. 
 
 ## How
 
-We take advantage of liveblog platforms to create the dataset. A liveblog is a daily live coverage about an ongoing event. Each liveblog consists of a set of news stories and a set of key moments. The key moments stories are manually selected by journalists from the whole set of news articles.
-Therefore, we consider the key moments as the ground-truth timeline.
-The liveblogs are collected through either the news source API (if available) or web scraping.
+To create this dataset, we take advantage of liveblogs, a webpage where news media outlets offer a daily live coverage about an ongoing event. Each liveblog (usually with a different URL) consists of a set of news stories and a set of key moments. The key moments stories are manually selected by journalists from the whole set of news articles, thus giving rise to the ground-truth timeline. Data from CNN is collected through the use of the [Newspaper 3k](https://newspaper.readthedocs.io/) python library. Instead, data from Público is obtained through an API.
 
-We intend to continue updating the corpus as long as the liveblogs are updated.
+As a rule-of-thumb, we consider the beginning of the liveblog coverage as the start time-period. For instance, CNN is tracked since April 4th, 2020 and Público since March 16th. Our aim is to continue expanding the dataset with further articles and possibly new topics until the end of the outbreak and/or the end of the liveblogs’ coverage. We anticipate that as the pandemic evolves, the amount of data collected will grow significantly.   
 
-The source code to reproduce the dataset is available in a Google Colab notebook. Try it here: [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/drive/1sJIiURksx-Y6doNuZQNAezWXEZ1NVfwv?usp=sharing)
+The source code to reproduce the dataset is available in a Google Colab notebook. Try it here: [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/drive/1sJIiURksx-Y6doNuZQNAezWXEZ1NVfwv?usp=sharing). You can also reach us for further details about the dataset.
 
 ## Statistics
 
