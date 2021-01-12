@@ -166,15 +166,14 @@ As of **31/12/2020**
 </tbody>
 </table>
 
-Distribution of topics type:
+Distribution of topics per type:
 
 | Type  |   PT   |   EN   |
 | :---: | :----: | :----: |
-|  PER  |   52   |    3   |
-|  ORG  |   25   |    4   |
-|  LOC  |   198  |    19  |
-|  MISC |   9    |    5   |
-|  KW   |   84   |    4   |
+|  PER  |   80   |    7   |
+|  ORG  |   147   |    13   |
+|  LOC  |   290  |    54  |
+|  KW   |   135   |    11   |
 
 
 WordClouds EN/PT:
