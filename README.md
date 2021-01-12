@@ -182,7 +182,7 @@ WordClouds EN/PT:
 
 ## Publication
 
-Pasquali, A., Campos, R., Ribeiro, A., Santana, B., Jorge, A., and Jatowt, A. (2021). TLS-Covid19: A New Annotated Corpus for Timeline Summarization. ECIR'21 (Lucca, Italy. March 28 - April 1). To appear.
+Pasquali, A., Campos, R., Ribeiro, A., Santana, B., Jorge, A., and Jatowt, A. (2021). TLS-Covid19: A New Annotated Corpus for Timeline Summarization. In: Hiemstra D., Moens M-F., Mothe J., Perego R., Potthast M., Sebastiani F. (eds), Advances in Information Retrieval. ECIR'21 (Lucca, Italy. March 28 - April 1). Lecture Notes in Computer Science, vol ..., pp. x - x. Springer. To Appear
 
 ## Contact
 
