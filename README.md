@@ -16,23 +16,15 @@ Following the worldwide coverage of the coronavirus pandemic, we propose the TLS
 
 To create this dataset, we take advantage of liveblogs, a webpage where news media outlets offer a daily live coverage about an ongoing event. Each liveblog (usually with a different URL) consists of a set of news stories and a set of key moments. The key moments stories are manually selected by journalists from the whole set of news articles, thus giving rise to the ground-truth timeline. Data from *Público* is obtained through an API. Liveblogs from *Observador* are collected using an API and the [Newspaper 3k](https://newspaper.readthedocs.io/) python library. Data from *CNN* and *The Guardian* is collected through the Newspaper 3k.
 
-As a rule-of-thumb, we consider the beginning of the liveblog coverage as the start time-period. For instance, *Público* liveblog is tracked since March 16th, 2020, *Observador* since January 30th, 2020 *CNN* since January 22th, 2020 and *The Guardian* since January 24th, 2020. Our aim is to continue expanding the dataset with further articles and possibly new topics until the end of the outbreak and/or the end of the liveblogs’ coverage. We anticipate that as the pandemic evolves, the amount of data collected will grow significantly.   
+As a rule-of-thumb, we consider the beginning of the liveblog coverage as the start time-period. For instance, *Público* liveblog is tracked since March 16, 2020, *Observador* since January 30, 2020 *CNN* since January 22, 2020 and *The Guardian* since January 24, 2020. Our aim is to continue expanding the dataset with further articles and possibly new topics until the end of the outbreak and/or the end of the liveblogs’ coverage. We anticipate that as the pandemic evolves, the amount of data collected will grow significantly.   
 
-The source code to reproduce the dataset is available in a Google Colab notebook. Try it here: [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/drive/1--oHb0ia5kaKjAZl0sr1mqAEleOwB8G8?usp=sharing).
-
-## Use Cases
-
-The TLS-Covid19 allows one to see the evolution of a topic over time and to compare what is being said about a certain topic by different news outlets. 
-
-One can also look at keywords, part-of-speech tags, entities or events to see how things have changed over time.
-
-As is common with most of the datasets of this kind, one can also look at collocates. A few examples might be: keywords that were common in the same time-period, words that appear near covid-19 in different time-periods, entites, events, nouns or verbs that were more common at the beginning of the pandemics than in December 2020.
-
-Finally, one can also create a sub-set of the dataset based on the publication date, the source, the country, etc.
+The source code to reproduce the dataset is available in a Google Colab notebook. Try it here: [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/drive/1--oHb0ia5kaKjAZl0sr1mqAEleOwB8G8?usp=sharing)
 
 ## Statistics
 
-As of **31/12/2020**
+As of **December 31, 2020**
+
+Per news source:
 
 <table>
 <thead>
@@ -113,6 +105,7 @@ As of **31/12/2020**
 </tbody>
 </table>
 
+Per news language:
 
 <table>
 <thead>
@@ -175,10 +168,19 @@ Distribution of topics per type:
 |  LOC  |   290  |    54  |
 |  KW   |   135   |    11   |
 
-
 WordClouds EN/PT:
 
 ![Word Clouds](img/wc_en-pt_merged.png?raw=true "English and portuguese word clouds")
+
+## Use Cases
+
+The TLS-Covid19 allows one to see the evolution of a topic over time and to compare what is being said about a certain topic by different news outlets. 
+
+One can also look at keywords, part-of-speech tags, entities or events to see how things have changed over time.
+
+As is common with most of the datasets of this kind, one can also look at collocates. A few examples might be: keywords that were common in the same time-period, words that appear near covid-19 in different time-periods, entites, events, nouns or verbs that were more common at the beginning of the pandemics than in December 2020.
+
+Finally, one can also create a sub-set of the dataset based on the publication date, the source, the country, etc.
 
 ## Publication
 
