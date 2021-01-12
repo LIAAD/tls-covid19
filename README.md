@@ -18,7 +18,7 @@ To create this dataset, we take advantage of liveblogs, a webpage where news med
 
 As a rule-of-thumb, we consider the beginning of the liveblog coverage as the start time-period. For instance, *Público* liveblog is tracked since March 16th, 2020, *Observador* since January 30th, 2020 *CNN* since January 22th, 2020 and *The Guardian* since January 24th, 2020. Our aim is to continue expanding the dataset with further articles and possibly new topics until the end of the outbreak and/or the end of the liveblogs’ coverage. We anticipate that as the pandemic evolves, the amount of data collected will grow significantly.   
 
-The source code to reproduce the dataset is available in a Google Colab notebook. Try it here: [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/drive/1--oHb0ia5kaKjAZl0sr1mqAEleOwB8G8?usp=sharing). You can also reach us for further details about the dataset.
+The source code to reproduce the dataset is available in a Google Colab notebook. Try it here: [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/drive/1--oHb0ia5kaKjAZl0sr1mqAEleOwB8G8?usp=sharing).
 
 ## Use Cases
 
@@ -179,3 +179,11 @@ Distribution of topics per type:
 WordClouds EN/PT:
 
 ![Word Clouds](img/wc_en-pt_merged.png?raw=true "English and portuguese word clouds")
+
+## Publication
+
+Pasquali, A., Campos, R., Ribeiro, A., Santana, B., Jorge, A., and Jatowt, A. (2021). TLS-Covid19: A New Annotated Corpus for Timeline Summarization. ECIR'21 (Lucca, Italy. March 28 - April 1). To appear.
+
+## Contact
+
+For further information related to the *TLS-COVID19* dataset please contact Alexandre Ribeiro (alexandre.m.ribeiro@inesctec.pt). 
