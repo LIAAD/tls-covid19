@@ -28,7 +28,7 @@ The source code to reproduce the dataset is available in a Google Colab notebook
 
 As of **December 31, 2020**
 
-Per news source:
+By news source:
 
 <table>
 <thead>
@@ -41,9 +41,9 @@ Per news source:
 </thead>
 <tbody>
   <tr>
-    <td>Lang</td>
-    <td>#Topics</td>
     <td>Sources</td>
+    <td>#Topics</td>
+    <td>Lang</td>
     <td>#Docs</td>
     <td>Avg #sents</td>
     <td>Avg #dates</td>
@@ -55,9 +55,9 @@ Per news source:
     <td>Dates</td>
   </tr>
   <tr>
-    <td rowspan="2">PT</td>
-    <td rowspan="2">652 (764)</td>
     <td>Público</td>
+    <td rowspan="2">652 (764)</td>
+    <td rowspan="2">PT</td>
     <td>51,351</td>
     <td>435.72</td>
     <td>44.43</td>
@@ -81,9 +81,9 @@ Per news source:
     <td>42.06</td>
   </tr>
   <tr>
-    <td rowspan="2">EN</td>
-    <td rowspan="2">85 (108)</td>
     <td>CNN</td>
+    <td rowspan="2">85 (108)</td>
+    <td rowspan="2">EN</td>
     <td>44,306</td>
     <td>4327.35</td>
     <td>137.93</td>
@@ -109,7 +109,7 @@ Per news source:
 </tbody>
 </table>
 
-Per news language:
+By news source language:
 
 <table>
 <thead>
