@@ -2,7 +2,7 @@
 
 ## What
 
-The *TLS-Covid19* is a multi-lingual and multi-document Timeline Summarization (TLS) annotated dataset built to foster the emergence and evaluation of new algorithms, and, at the same time, enable the study of news coverage about the COVID-19 pandemic. It consists of a number of curated topics related to the Covid-19 outbreak, with associated news articles from portuguese and english news outlets and their respective reference timelines as gold-standard. The news sources include [*Público*](https://www.publico.pt/) and [*Observador*](https://observador.pt/) for Portuguese and [*CNN*](https://edition.cnn.com/) and [*The Guardian*](https://www.theguardian.com/) for English. The following figure shows the format and the structure  of the dataset.
+The *TLS-Covid19* is a multi-lingual and multi-document Timeline Summarization (TLS) annotated dataset built to foster the emergence and evaluation of new algorithms, and, at the same time, enable the study of news coverage about the COVID-19 pandemic. It consists of a number of curated topics related to the Covid-19 outbreak, with associated news articles from portuguese and english news outlets and their respective reference timelines as gold-standard. The following figure shows the format and the structure  of the dataset.
 
 ![Dataset structure](img/tls-covid19-structure.jpg?raw=true "Dataset structure")
 
@@ -18,9 +18,9 @@ To create this dataset, we take advantage of liveblogs, a webpage where news med
 
 ## Data Sources
 
-We consider two Portuguese news sources, *Público* and *Observador*, and two English news sources, *CNN* and *The Guardian*.
+We consider two Portuguese news sources, [*Público*](https://www.publico.pt/) and [*Observador*](https://observador.pt/), and two English news sources, [*CNN*](https://edition.cnn.com/) and [*The Guardian*](https://www.theguardian.com/).
 
-As a rule-of-thumb, we consider the beginning of the liveblog coverage as the start time-period. For instance, *Público* liveblog is tracked since March 16, 2020, *Observador* since January 30, 2020 *CNN* since January 22, 2020 and *The Guardian* since January 24, 2020. Our aim is to continue expanding the dataset with further articles and possibly new topics until the end of the outbreak and/or the end of the liveblogs’ coverage. We anticipate that as the pandemic evolves, the amount of data collected will grow significantly.   
+As a rule-of-thumb, we consider the beginning of the liveblog coverage as the start time-period. For instance, *Público* liveblog is tracked since March 16, 2020; *Observador* since January 30, 2020; *CNN* since January 22, 2020; and *The Guardian* since January 24, 2020. Our aim is to continue expanding the dataset with further articles and possibly new topics until the end of the outbreak and/or the end of the liveblogs’ coverage. We anticipate that as the pandemic evolves, the amount of data collected will grow significantly.   
 
 The source code to reproduce the dataset is available in a Google Colab notebook. Try it here: [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/drive/1--oHb0ia5kaKjAZl0sr1mqAEleOwB8G8?usp=sharing)
 
