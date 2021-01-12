@@ -1,8 +1,8 @@
-# tls-covid19 dataset
+# TLS-Covid19 dataset
 
 ## What
 
-The *tls-covid19* is a multi-lingual and multi-document Timeline Summarization (TLS) annotated dataset built to foster the emergence and evaluation of new algorithms, and, at the same time, enable the study of news coverage about the COVID-19 pandemic. It consists of a number of curated topics related to the Covid-19 outbreak, with associated news articles from portuguese and english news outlets and their respective reference timelines as gold-standard. The news sources include [Jornal Público](https://www.publico.pt/) (PT) and the[CNN](https://edition.cnn.com/) (EN). The following figure shows the format and the structure  of the dataset.
+The *TLS-Covid19* is a multi-lingual and multi-document Timeline Summarization (TLS) annotated dataset built to foster the emergence and evaluation of new algorithms, and, at the same time, enable the study of news coverage about the COVID-19 pandemic. It consists of a number of curated topics related to the Covid-19 outbreak, with associated news articles from portuguese and english news outlets and their respective reference timelines as gold-standard. The news sources include [Jornal Público](https://www.publico.pt/) (PT) and the[CNN](https://edition.cnn.com/) (EN). The following figure shows the format and the structure  of the dataset.
 
 ![Dataset structure](img/tls-covid19-structure.jpg?raw=true "Dataset structure")
 
@@ -19,6 +19,16 @@ To create this dataset, we take advantage of liveblogs, a webpage where news med
 As a rule-of-thumb, we consider the beginning of the liveblog coverage as the start time-period. For instance, CNN is tracked since April 4th, 2020 and Público since March 16th. Our aim is to continue expanding the dataset with further articles and possibly new topics until the end of the outbreak and/or the end of the liveblogs’ coverage. We anticipate that as the pandemic evolves, the amount of data collected will grow significantly.   
 
 The source code to reproduce the dataset is available in a Google Colab notebook. Try it here: [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/drive/1sJIiURksx-Y6doNuZQNAezWXEZ1NVfwv?usp=sharing). You can also reach us for further details about the dataset.
+
+## Use Cases
+
+The TLS-Covid19 allows one to see the evolution of a topic over time and to compare what is being said about a certain topic by different news outlets. 
+
+One can also look at keywords, part-of-speech tags, entities or events to see how things have changed over time.
+
+As is common with most of the datasets of this kind, one can also look at collocates. A few examples might be: keywords that were common in the same time-period, words that appear near covid-19 in different time-periods, entites, events, nouns or verbs that were more common at the beginning of the pandemics than in December 2020.
+
+Finally, one can also create a sub-set of the dataset based on the publication date, the source, the country, etc.
 
 ## Statistics
 
