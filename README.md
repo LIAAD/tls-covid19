@@ -28,7 +28,7 @@ The source code to reproduce the dataset is available in a Google Colab notebook
 
 As of **December 31, 2020**
 
-The following tables describe detailed statistics about the dataset. As of the data of December 31, 2020, we have collected 652 common topics for *Publico* and *Observador*, and 85 common topics for *CNN* and *The Guardian*.
+The following tables describe detailed statistics about the dataset. As of the date of December 31, 2020, we have collected 652 common topics for *Publico* and *Observador*, and 85 common topics for *CNN* and *The Guardian*.
 
 By news source:
 
