@@ -56,8 +56,8 @@ By news source:
   </tr>
   <tr>
     <td>Público</td>
-    <td rowspan="2">652 (764)</td>
-    <td rowspan="2">PT</td>
+    <td>652 (764)</td>
+    <td>PT</td>
     <td>51,351</td>
     <td>435.72</td>
     <td>44.43</td>
@@ -70,6 +70,8 @@ By news source:
   </tr>
   <tr>
     <td>Observador</td>
+    <td>652 (764)</td>
+    <td>PT</td>
     <td>83,884</td>
     <td>736.70</td>
     <td>56.64</td>
@@ -82,8 +84,8 @@ By news source:
   </tr>
   <tr>
     <td>CNN</td>
-    <td rowspan="2">85 (108)</td>
-    <td rowspan="2">EN</td>
+    <td>85 (108)</td>
+    <td>EN</td>
     <td>44,306</td>
     <td>4327.35</td>
     <td>137.93</td>
@@ -96,6 +98,8 @@ By news source:
   </tr>
   <tr>
     <td>Guardian</td>
+    <td>85 (108)</td>
+    <td>EN</td>
     <td>10,977</td>
     <td>867.80</td>
     <td>61.06</td>
