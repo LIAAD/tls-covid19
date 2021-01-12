@@ -14,7 +14,11 @@ Following the worldwide coverage of the coronavirus pandemic, we propose the TLS
 
 ## How
 
-To create this dataset, we take advantage of liveblogs, a webpage where news media outlets offer a daily live coverage about an ongoing event. Each liveblog (usually with a different URL) consists of a set of news stories and a set of key moments. The key moments stories are manually selected by journalists from the whole set of news articles, thus giving rise to the ground-truth timeline. Data from *Público* is obtained through an API. Liveblogs from *Observador* are collected using an API and the [Newspaper 3k](https://newspaper.readthedocs.io/) python library. Data from *CNN* and *The Guardian* is collected through the Newspaper 3k.
+To create this dataset, we take advantage of liveblogs, a webpage where news media outlets offer a daily live coverage about an ongoing event. Each liveblog (usually with a different URL) consists of a set of news stories and a set of key moments. The key moments stories are manually selected by journalists from the whole set of news articles, thus giving rise to the ground-truth timeline.
+
+## Data Sources
+
+We consider two Portuguese news sources, *Público* and *Observador*, and two English news sources, *CNN* and *The Guardian*.
 
 As a rule-of-thumb, we consider the beginning of the liveblog coverage as the start time-period. For instance, *Público* liveblog is tracked since March 16, 2020, *Observador* since January 30, 2020 *CNN* since January 22, 2020 and *The Guardian* since January 24, 2020. Our aim is to continue expanding the dataset with further articles and possibly new topics until the end of the outbreak and/or the end of the liveblogs’ coverage. We anticipate that as the pandemic evolves, the amount of data collected will grow significantly.   
 
