@@ -198,4 +198,4 @@ Pasquali, A., Campos, R., Ribeiro, A., Santana, B., Jorge, A., and Jatowt, A. (2
 
 ## Contact
 
-For further information related to the *TLS-COVID19* dataset please contact Alexandre Ribeiro (alexandre.m.ribeiro@inesctec.pt). 
+For further information related to the *TLS-Covid19* dataset please contact Alexandre Ribeiro (alexandre.m.ribeiro@inesctec.pt), Arian Pasquali (arian.r.pasquali@inesctec.pt), or Ricardo Campos (ricardo.campos@ipt.pt).
