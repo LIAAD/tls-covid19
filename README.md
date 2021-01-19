@@ -2,7 +2,7 @@
 
 ## What
 
-The *TLS-Covid19* is a multi-lingual and multi-document Timeline Summarization (TLS) annotated dataset built to foster the emergence and evaluation of new algorithms, and, at the same time, enable the study of news coverage about the COVID-19 pandemic. It consists of a number of curated topics related to the Covid-19 outbreak, with associated news articles from portuguese and english news outlets and their respective reference timelines as gold-standard. The news sources include [*Público*](https://www.publico.pt/) and [*Observador*](https://observador.pt/) for Portuguese and [*CNN*](https://edition.cnn.com/) and [*The Guardian*](https://www.theguardian.com/) for English. The following figure shows the format and the structure  of the dataset.
+The *TLS-Covid19* is a multi-lingual and multi-document Timeline Summarization (TLS) annotated dataset built to foster the emergence and evaluation of new algorithms, and, at the same time, enable the study of news coverage about the COVID-19 pandemic. It consists of a number of curated topics related to the Covid-19 outbreak, with associated news articles from portuguese and english news outlets and their respective reference timelines as gold-standard. The following figure shows the format and the structure  of the dataset.
 
 ![Dataset structure](img/tls-covid19-structure.jpg?raw=true "Dataset structure")
 
@@ -14,9 +14,13 @@ Following the worldwide coverage of the coronavirus pandemic, we propose the TLS
 
 ## How
 
-To create this dataset, we take advantage of liveblogs, a webpage where news media outlets offer a daily live coverage about an ongoing event. Each liveblog (usually with a different URL) consists of a set of news stories and a set of key moments. The key moments stories are manually selected by journalists from the whole set of news articles, thus giving rise to the ground-truth timeline. Data from *Público* is obtained through an API. Liveblogs from *Observador* are collected using an API and the [Newspaper 3k](https://newspaper.readthedocs.io/) python library. Data from *CNN* and *The Guardian* is collected through the Newspaper 3k.
+To create this dataset, we take advantage of liveblogs, a webpage where news media outlets offer a daily live coverage about an ongoing event. Each liveblog (usually with a different URL) consists of a set of news stories and a set of key moments. The key moments stories are manually selected by journalists from the whole set of news articles, thus giving rise to the ground-truth timeline.
 
-As a rule-of-thumb, we consider the beginning of the liveblog coverage as the start time-period. For instance, *Público* liveblog is tracked since March 16, 2020, *Observador* since January 30, 2020 *CNN* since January 22, 2020 and *The Guardian* since January 24, 2020. Our aim is to continue expanding the dataset with further articles and possibly new topics until the end of the outbreak and/or the end of the liveblogs’ coverage. We anticipate that as the pandemic evolves, the amount of data collected will grow significantly.   
+## Data Sources
+
+We consider two Portuguese news sources, [*Público*](https://www.publico.pt/) and [*Observador*](https://observador.pt/), and two English news sources, [*CNN*](https://edition.cnn.com/) and [*The Guardian*](https://www.theguardian.com/).
+
+As a rule-of-thumb, we consider the beginning of the liveblog coverage as the start time-period. For instance, *Público* liveblog is tracked since March 16, 2020; *Observador* since January 30, 2020; *CNN* since January 22, 2020; and *The Guardian* since January 24, 2020. Our aim is to continue expanding the dataset with further articles and possibly new topics until the end of the outbreak and/or the end of the liveblogs’ coverage. We anticipate that as the pandemic evolves, the amount of data collected will grow significantly.   
 
 The source code to reproduce the dataset is available in a Google Colab notebook. Try it here: [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/drive/1--oHb0ia5kaKjAZl0sr1mqAEleOwB8G8?usp=sharing)
 
@@ -24,7 +28,9 @@ The source code to reproduce the dataset is available in a Google Colab notebook
 
 As of **December 31, 2020**
 
-Per news source:
+The following tables describe detailed statistics about the dataset. As of the date of December 31, 2020, we have collected 143 common topics for *Publico* and *Observador*, and 36 common topics for *CNN* and *The Guardian*.
+
+By news source:
 
 <table>
 <thead>
@@ -37,9 +43,9 @@ Per news source:
 </thead>
 <tbody>
   <tr>
-    <td>Lang</td>
-    <td>#Topics</td>
     <td>Sources</td>
+    <td>#Topics</td>
+    <td>Lang</td>
     <td>#Docs</td>
     <td>Avg #sents</td>
     <td>Avg #dates</td>
@@ -51,61 +57,65 @@ Per news source:
     <td>Dates</td>
   </tr>
   <tr>
-    <td rowspan="2">PT</td>
-    <td rowspan="2">652 (764)</td>
     <td>Público</td>
-    <td>51,351</td>
-    <td>435.72</td>
-    <td>44.43</td>
-    <td>9.81</td>
-    <td>23.52</td>
-    <td>15.88</td>
-    <td>1.48</td>
-    <td>5.40</td>
-    <td>35.74</td>
+    <td>143</td>
+    <td>PT</td>
+    <td>28,327</td>
+    <td>1092.15</td>
+    <td>99.93</td>
+    <td>10.93</td>
+    <td>62.82</td>
+    <td>40.05</td>
+    <td>1.57</td>
+    <td>5.75</td>
+    <td>40.08</td>
   </tr>
   <tr>
     <td>Observador</td>
-    <td>83,884</td>
-    <td>736.70</td>
-    <td>56.64</td>
-    <td>13.01</td>
-    <td>49.14</td>
-    <td>23.82</td>
-    <td>2.06</td>
-    <td>6.67</td>
-    <td>42.06</td>
+    <td>143</td>
+    <td>PT</td>
+    <td>40,181</td>
+    <td>1653.22</td>
+    <td>120.52</td>
+    <td>13.72</td>
+    <td>114.90</td>
+    <td>57.77</td>
+    <td>1.99</td>
+    <td>6.95</td>
+    <td>47.93</td>
   </tr>
   <tr>
-    <td rowspan="2">EN</td>
-    <td rowspan="2">85 (108)</td>
     <td>CNN</td>
-    <td>44,306</td>
-    <td>4327.35</td>
-    <td>137.93</td>
-    <td>31.37</td>
-    <td>22.08</td>
-    <td>14.85</td>
-    <td>1.49</td>
-    <td>0.51</td>
-    <td>10.77</td>
+    <td>36</td>
+    <td>EN</td>
+    <td>26,230</td>
+    <td>6051.28</td>
+    <td>187.67</td>
+    <td>32.24</td>
+    <td>29.53</td>
+    <td>20.64</td>
+    <td>1.43</td>
+    <td>0.49</td>
+    <td>11.00</td>
   </tr>
   <tr>
     <td>Guardian</td>
-    <td>10,977</td>
-    <td>867.80</td>
-    <td>61.06</td>
-    <td>14.21</td>
-    <td>20.31</td>
-    <td>17.81</td>
-    <td>1.14</td>
-    <td>2.34</td>
-    <td>29.17</td>
+    <td>36</td>
+    <td>EN</td>
+    <td>5,980</td>
+    <td>1112.53</td>
+    <td>80.47</td>
+    <td>13.82</td>
+    <td>24.94</td>
+    <td>21.75</td>
+    <td>1.15</td>
+    <td>2.24</td>
+    <td>27.03</td>
   </tr>
 </tbody>
 </table>
 
-Per news language:
+By news source language:
 
 <table>
 <thead>
@@ -132,41 +142,41 @@ Per news language:
   </tr>
   <tr>
     <td>PT</td>
-    <td>652 (764)</td>
-    <td>135,235</td>
-    <td>586.21</td>
-    <td>50.54</td>
-    <td>11.60</td>
-    <td>36.33</td>
-    <td>19.85</td>
-    <td>1.83</td>
-    <td>6.20</td>
-    <td>39.28</td>
+    <td>143</td>
+    <td>68,508</td>
+    <td>1372.69</td>
+    <td>110.23</td>
+    <td>12.45</td>
+    <td>88.86</td>
+    <td>48.91</td>
+    <td>1.82</td>
+    <td>6.47</td>
+    <td>44.37</td>
   </tr>
   <tr>
     <td>EN</td>
-    <td>85 (108)</td>
-    <td>55,283</td>
-    <td>2597.58</td>
-    <td>99.50</td>
-    <td>26.11</td>
+    <td>36</td>
+    <td>32,210</td>
+    <td>3581.91</td>
+    <td>134.07</td>
+    <td>26.72</td>
+    <td>27.24</td>
     <td>21.20</td>
-    <td>16.33</td>
-    <td>1.30</td>
-    <td>0.82</td>
-    <td>16.41</td>
+    <td>1.28</td>
+    <td>0.76</td>
+    <td>15.81</td>
   </tr>
 </tbody>
 </table>
 
-Distribution of topics per type:
+Distribution of topics by type:
 
 | Type  |   PT   |   EN   |
 | :---: | :----: | :----: |
-|  PER  |   80   |    7   |
-|  ORG  |   147   |    13   |
-|  LOC  |   290  |    54  |
-|  KW   |   135   |    11   |
+|  PER  |   17   |    3   |
+|  ORG  |   33   |    7   |
+|  LOC  |   82  |    25  |
+|  KW   |   11   |    1   |
 
 WordClouds EN/PT:
 
@@ -188,4 +198,4 @@ Pasquali, A., Campos, R., Ribeiro, A., Santana, B., Jorge, A., and Jatowt, A. (2
 
 ## Contact
 
-For further information related to the *TLS-COVID19* dataset please contact Alexandre Ribeiro (alexandre.m.ribeiro@inesctec.pt). 
+For further information related to the *TLS-Covid19* dataset please contact Alexandre Ribeiro (alexandre.m.ribeiro@inesctec.pt), Arian Pasquali (arian.r.pasquali@inesctec.pt), or Ricardo Campos (ricardo.campos@ipt.pt).
