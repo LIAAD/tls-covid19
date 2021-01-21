@@ -75,7 +75,7 @@ By news source:
     <td>143</td>
     <td>PT</td>
     <td>40,181</td>
-    <td>1652.22</td>
+    <td>1653.22</td>
     <td>120.52</td>
     <td>13.72</td>
     <td>114.90</td>
