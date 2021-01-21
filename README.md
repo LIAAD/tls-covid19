@@ -28,7 +28,7 @@ The source code to reproduce the dataset is available in a Google Colab notebook
 
 As of **December 31, 2020**
 
-The following tables describe detailed statistics about the dataset. As of the date of December 31, 2020, we have collected 143 common topics for *Publico* and *Observador*, and 36 common topics for *CNN* and *The Guardian*.
+The following tables describe detailed statistics about the dataset. As of the date of December 31, 2020, we have collected 143 common topics for *Publico* and *Observador*, and 35 common topics for *CNN* and *The Guardian*.
 
 By news source:
 
@@ -75,7 +75,7 @@ By news source:
     <td>143</td>
     <td>PT</td>
     <td>40,181</td>
-    <td>1653.22</td>
+    <td>1652.22</td>
     <td>120.52</td>
     <td>13.72</td>
     <td>114.90</td>
@@ -86,31 +86,31 @@ By news source:
   </tr>
   <tr>
     <td>CNN</td>
-    <td>36</td>
+    <td>35</td>
     <td>EN</td>
-    <td>26,230</td>
-    <td>6051.28</td>
-    <td>187.67</td>
-    <td>32.24</td>
-    <td>29.53</td>
-    <td>20.64</td>
-    <td>1.43</td>
+    <td>26,043</td>
+    <td>6178.54</td>
+    <td>189.71</td>
+    <td>32.57</td>
+    <td>30.11</td>
+    <td>20.97</td>
+    <td>1.44</td>
     <td>0.49</td>
-    <td>11.00</td>
+    <td>11.05</td>
   </tr>
   <tr>
     <td>Guardian</td>
-    <td>36</td>
+    <td>35</td>
     <td>EN</td>
-    <td>5,980</td>
-    <td>1112.53</td>
-    <td>80.47</td>
-    <td>13.82</td>
-    <td>24.94</td>
-    <td>21.75</td>
+    <td>5,848</td>
+    <td>1118.86</td>
+    <td>80.69</td>
+    <td>13.87</td>
+    <td>25.26</td>
+    <td>21.97</td>
     <td>1.15</td>
-    <td>2.24</td>
-    <td>27.03</td>
+    <td>2.26</td>
+    <td>27.23</td>
   </tr>
 </tbody>
 </table>
@@ -155,16 +155,16 @@ By news source language:
   </tr>
   <tr>
     <td>EN</td>
-    <td>36</td>
-    <td>32,210</td>
-    <td>3581.91</td>
-    <td>134.07</td>
-    <td>26.72</td>
-    <td>27.24</td>
-    <td>21.20</td>
-    <td>1.28</td>
+    <td>35</td>
+    <td>31,891</td>
+    <td>3648.70</td>
+    <td>135.20</td>
+    <td>26.99</td>
+    <td>27.69</td>
+    <td>21.47</td>
+    <td>1.29</td>
     <td>0.76</td>
-    <td>15.81</td>
+    <td>15.89</td>
   </tr>
 </tbody>
 </table>
@@ -174,7 +174,7 @@ Distribution of topics by type:
 | Type  |   PT   |   EN   |
 | :---: | :----: | :----: |
 |  PER  |   17   |    3   |
-|  ORG  |   33   |    7   |
+|  ORG  |   33   |    6   |
 |  LOC  |   82  |    25  |
 |  KW   |   11   |    1   |
 
