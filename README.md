@@ -195,6 +195,7 @@ Finally, one can also create a sub-set of the dataset based on the publication d
 ## Publication
 
 Pasquali, A., Campos, R., Ribeiro, A., Santana, B., Jorge, A., and Jatowt, A. (2021). TLS-Covid19: A New Annotated Corpus for Timeline Summarization. In: Hiemstra D., Moens M-F., Mothe J., Perego R., Potthast M., Sebastiani F. (eds), Advances in Information Retrieval. ECIR'21 (Lucca, Italy. March 28 - April 1). Lecture Notes in Computer Science, vol 12656, pp. 497 - 512.
+[ECIR21 presentation](https://www.youtube.com/watch?v=kz7-Xzj_8YM)
 
 ## Contact
 
